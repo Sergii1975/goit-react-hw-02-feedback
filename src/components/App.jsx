@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Statistics from "./FeedbackVidget/Statistics";
 import FeedbackOptions from "./FeedbackVidget/FeedbackOptions";
-import Layout from "./FeedbackVidget/Layout";
+import AppWrapper from "./FeedbackVidget/AppWrapper";
 import Notification from "./FeedbackVidget/Notification";
 import SectionTitle from "./FeedbackVidget/SectionTitle";
 
@@ -33,7 +33,7 @@ export class App extends Component {
     const options = Object.keys(this.state);
 
     return (
-      <Layout>
+      <AppWrapper>
         <SectionTitle title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -53,7 +53,7 @@ export class App extends Component {
             <Notification message="There is no feedback" />
           )}
         </SectionTitle>
-      </Layout>
+      </AppWrapper>
     );
   }
 }
