@@ -21,7 +21,7 @@ export const Button = styled.button`
   border-radius: 4px;
   cursor: pointer;
   margin-right: 10px;
-
+  
   &:hover {
     background-color: #e0e0e0;
   }

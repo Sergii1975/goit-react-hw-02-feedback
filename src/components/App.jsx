@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Statistics from "./Statistic/Statistics";
 import FeedbackOptions from "./FeedbackVidget/FeedbackOptions";
-// import AppWrapper from "./FeedbackVidget/AppWrapper";
 import Notification from "./Notification/Notification";
 import SectionTitle from "./Section/SectionTitle";
 import { AppWrapper } from './App.styled';
