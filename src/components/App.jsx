@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Statistics from "./FeedbackVidget/Statistics";
+import Statistics from "./Statistic/Statistics";
 import FeedbackOptions from "./FeedbackVidget/FeedbackOptions";
-import AppWrapper from "./FeedbackVidget/AppWrapper";
-import Notification from "./FeedbackVidget/Notification";
-import SectionTitle from "./FeedbackVidget/SectionTitle";
+// import AppWrapper from "./FeedbackVidget/AppWrapper";
+import Notification from "./Notification/Notification";
+import SectionTitle from "./Section/SectionTitle";
+import { AppWrapper } from './App.styled';
 
 export class App extends Component {
   state = {
@@ -50,7 +51,7 @@ export class App extends Component {
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           ) : (
-            <Notification message="There is no feedback" />
+            <Notification message="No feedback given" />
           )}
         </SectionTitle>
       </AppWrapper>
